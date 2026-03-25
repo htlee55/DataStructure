@@ -1,16 +1,19 @@
-// 배열에서 최댓값을 찾아 반환하는 함수
-int findMaxValue(int a[], int len)
+#include <cstdio>		// C 헤더파일 <stdio.h>를 포함하는 것과 동일
+#define MAX_SIZE 10
+// 배열을 파라미터로 받는 함수
+void sub(int x, int arr[])
 {
-	int maxVal = a[0];
-	for (int i = 1; i < len; i++)
-		if (maxVal < a[i])
-			maxVal = a[i];
-	return maxVal;
+	x = 10;
+	arr[0] = 10;
 }
-#include <cstdio>
+// 주 함수
 void main()
 {
-	int arr[10] = { 3, 24, 82, 12, 34, 7, 53, 17, 26, 51 };
-	int maxVal = findMaxValue(arr, 10);
-	printf("배열의 최댓값 = %d\n", maxVal);
+	int var;				// 정수 변수의 선언
+	int list[MAX_SIZE];		// 정수 배열의 선언
+
+	var = 0;				// 변수 var에 0 대입
+	list[0] = 0;			// list 첫 번째 요소에 0 대입
+	sub(var, list);			// 변수와 배열을 매개변수로 전달
+	printf("var=%d, list[0]=%d\n", var, list[0]);
 }
