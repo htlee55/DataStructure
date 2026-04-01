@@ -1,6 +1,7 @@
 #include <cstdio>	  // C 헤더파일 <stdio.h>을 포함하는 것과 동일
 #include <cstdlib>  // C 헤더파일 <stdlib.h>을 포함하는 것과 동일
 #include "ArrayStack.h"
+#include "Utility.h"
 
 ArrayStack::ArrayStack() : top(-1) { for (int i = 0; i < MAX_STACK_SIZE; i++) data[i] = 0; }	// 스택 성성자
 ArrayStack::~ArrayStack() {}																	// 스택 소멸자
