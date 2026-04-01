@@ -2,12 +2,6 @@
 #include <cstdio>	// C 헤더파일 <stdio.h>을 포함하는 것과 동일
 #include <cstdlib>  // C 헤더파일 <stdlib.h>을 포함하는 것과 동일
 
-// 오류 처리 함수
-inline void error(const char* message) {
-	printf("%s\n", message);
-	exit(1);
-}
-
 const int MAX_STACK_SIZE = 20;		// 스택의 최대 크기 설정
 class ArrayStack
 {
